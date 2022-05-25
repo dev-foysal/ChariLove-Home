@@ -1894,6 +1894,46 @@
         .card-title {
           font-size: 22px;
         }
+        .fundraiseing-content-btn {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:450px) {
+  .fundraising {
+    padding-bottom: 60px;
+    .fundraising-title-content {
+      .heading {
+        padding: 0 72px;
+      }
+    }
+    .card {
+      margin-bottom: 35px;
+
+      .card-body{
+        padding: 30px 20px 0 20px;
+        .card-counter {
+          width: 280px;
+          padding: 10px 0;
+
+          .text {
+            font-size: 15px;
+          }
+
+          .progress {
+            margin: 0 auto 0 -8px;
+          }
+          
+        }
+        .card-title {
+          font-size: 22px;
+        }
+        .fundraiseing-content-btn {
+          margin-bottom: 30px;
+        }
       }
     }
   }
@@ -1906,6 +1946,7 @@
       }
     }
     .card {
+      margin-bottom: 20px;
       .card-body {
         padding: 20px 15px 20px 15px;
         .card-counter {
@@ -2842,7 +2883,7 @@
 }
 @media (max-width:500px) {
   .testimonials {
-    height: 780px;
+    height: 800px;
     .testimonials-content {
       padding-top: 40px;
 

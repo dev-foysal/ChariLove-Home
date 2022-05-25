@@ -1765,11 +1765,48 @@ ul {
   .fundraising .card .card-body .card-title {
     font-size: 22px;
   }
+  .fundraising .card .card-body .fundraiseing-content-btn {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .fundraising {
+    padding-bottom: 60px;
+  }
+  .fundraising .fundraising-title-content .heading {
+    padding: 0 72px;
+  }
+  .fundraising .card {
+    margin-bottom: 35px;
+  }
+  .fundraising .card .card-body {
+    padding: 30px 20px 0 20px;
+  }
+  .fundraising .card .card-body .card-counter {
+    width: 280px;
+    padding: 10px 0;
+  }
+  .fundraising .card .card-body .card-counter .text {
+    font-size: 15px;
+  }
+  .fundraising .card .card-body .card-counter .progress {
+    margin: 0 auto 0 -8px;
+  }
+  .fundraising .card .card-body .card-title {
+    font-size: 22px;
+  }
+  .fundraising .card .card-body .fundraiseing-content-btn {
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 320px) {
   .fundraising .fundraising-title-content .heading {
     padding: 0;
+  }
+  .fundraising .card {
+    margin-bottom: 20px;
   }
   .fundraising .card .card-body {
     padding: 20px 15px 20px 15px;
@@ -2631,7 +2668,7 @@ ul {
 
 @media (max-width: 500px) {
   .testimonials {
-    height: 780px;
+    height: 800px;
   }
   .testimonials .testimonials-content {
     padding-top: 40px;

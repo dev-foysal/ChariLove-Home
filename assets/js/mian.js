@@ -129,7 +129,7 @@
         margin:10,
         dots: false,
         nav:false,
-        autoplay: true,
+        autoplay: false,
         responsive:{
             0:{
                 items:1
