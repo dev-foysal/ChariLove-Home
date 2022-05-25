@@ -104,6 +104,16 @@ ul {
   color: #ed312d;
 }
 
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 9999;
+  pointer-events: none;
+}
+
 @media (max-width: 1024px) {
   .section-padding {
     padding: 100px 0;
