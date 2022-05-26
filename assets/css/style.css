@@ -3291,6 +3291,147 @@ canvas {
 }
 
 /**********footer section end*******/
+/*  scroll css section here*/
+/*scroll to top*/
+@-webkit-keyframes shake-little {
+  0% {
+    -webkit-transform: translate(0, 0) rotate(0);
+            transform: translate(0, 0) rotate(0);
+  }
+  14%, 16%, 2%, 20%, 24%, 30%, 48%, 52%, 54%, 76%, 8%, 84%, 86%, 88%, 92%, 96%, 98% {
+    -webkit-transform: translate(0, 0) rotate(-0.5deg);
+            transform: translate(0, 0) rotate(-0.5deg);
+  }
+  10%, 12%, 22%, 32%, 4%, 42%, 44%, 64%, 72%, 80%, 90% {
+    -webkit-transform: translate(-1px, 0) rotate(-0.5deg);
+            transform: translate(-1px, 0) rotate(-0.5deg);
+  }
+  18%, 34%, 36%, 46%, 6%, 66%, 68%, 70%, 74%, 82%, 94% {
+    -webkit-transform: translate(0, -1px) rotate(-0.5deg);
+            transform: translate(0, -1px) rotate(-0.5deg);
+  }
+  26%, 28%, 38%, 40%, 50%, 56%, 58%, 60%, 62%, 78% {
+    -webkit-transform: translate(-1px, -1px) rotate(-0.5deg);
+            transform: translate(-1px, -1px) rotate(-0.5deg);
+  }
+}
+@keyframes shake-little {
+  0% {
+    -webkit-transform: translate(0, 0) rotate(0);
+            transform: translate(0, 0) rotate(0);
+  }
+  14%, 16%, 2%, 20%, 24%, 30%, 48%, 52%, 54%, 76%, 8%, 84%, 86%, 88%, 92%, 96%, 98% {
+    -webkit-transform: translate(0, 0) rotate(-0.5deg);
+            transform: translate(0, 0) rotate(-0.5deg);
+  }
+  10%, 12%, 22%, 32%, 4%, 42%, 44%, 64%, 72%, 80%, 90% {
+    -webkit-transform: translate(-1px, 0) rotate(-0.5deg);
+            transform: translate(-1px, 0) rotate(-0.5deg);
+  }
+  18%, 34%, 36%, 46%, 6%, 66%, 68%, 70%, 74%, 82%, 94% {
+    -webkit-transform: translate(0, -1px) rotate(-0.5deg);
+            transform: translate(0, -1px) rotate(-0.5deg);
+  }
+  26%, 28%, 38%, 40%, 50%, 56%, 58%, 60%, 62%, 78% {
+    -webkit-transform: translate(-1px, -1px) rotate(-0.5deg);
+            transform: translate(-1px, -1px) rotate(-0.5deg);
+  }
+}
+
+.scroll-top {
+  height: 60px;
+  width: 60px;
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  display: none;
+  z-index: 9999;
+}
+
+.scroll-top i {
+  color: #ed312d;
+  font-size: 30px;
+  margin-left: 9px;
+  transform: rotate(269deg);
+  -webkit-transform: rotate(269deg);
+  -moz-transform: rotate(269deg);
+  -ms-transform: rotate(269deg);
+  -o-transform: rotate(269deg);
+}
+
+.scroll-top:hover {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: .1s;
+          animation-duration: .1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: shake-little;
+          animation-name: shake-little;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.scroll-top .flame {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #ffda44 transparent transparent;
+  border-style: solid;
+  border-width: 28px 3px 3px;
+  display: none;
+  height: 0;
+  left: -4px;
+  margin: -5px auto 0;
+  position: absolute;
+  right: 0;
+  top: 66%;
+  width: 0;
+  -webkit-transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+}
+
+.scroll-top .flame + .flame {
+  border-width: 16px 3px 3px;
+  left: 18px;
+  margin: 0;
+}
+
+.scroll-top .flame + .flame + .flame {
+  border-width: 16px 3px 3px;
+  left: auto;
+  margin: 0;
+  right: 22px;
+}
+
+.scrolling .flame {
+  display: block;
+}
+
+.nav-toggle {
+  -webkit-transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+}
+
+.owl-item .quote-icon {
+  -webkit-transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+}
+
+.price-box .price-box-head-shadow {
+  -webkit-transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+}
+
+@media (max-width: 768px) {
+  .button {
+    display: none;
+  }
+}
+
 @-webkit-keyframes loading-1 {
   0% {
     -webkit-transform: rotate(0deg);
@@ -3307,6 +3448,7 @@ canvas {
     -o-transform: rotate(180deg);
   }
 }
+
 @keyframes loading-1 {
   0% {
     -webkit-transform: rotate(0deg);

@@ -351,3 +351,38 @@ function funMouse() {
 
 // run fun mouse to have this cursor
 funMouse();
+
+
+  // // scroll to top
+  // var btn = $('.button');
+
+  // $(window).scroll(function() {
+  //   if ($(window).scrollTop() > 300) {
+  //     btn.addClass('show');
+  //   } else {
+  //     btn.removeClass('show');
+  //   }
+  // });
+
+  // btn.on('click', function(e) {
+  //   e.preventDefault();
+  //   $('html, body').animate({scrollTop:0}, '300');
+  // });
+
+  // Scroll to top button
+  wnHeight = jQuery(window).height();
+  //Check to see if the window is top if not then display button
+  jQuery(window).scroll(function(){
+      if (jQuery(this).scrollTop() > wnHeight/2) {
+          jQuery('.scroll-top').fadeIn();
+      } else {
+         jQuery('.scroll-top').fadeOut().removeClass('scrolling');
+      }
+  });
+
+  //Click event to scroll to top
+  jQuery('.scroll-top').click(function(){
+      jQuery('html, body').animate({scrollTop : 0},800);
+      jQuery(this).addClass('scrolling');
+
+  });
