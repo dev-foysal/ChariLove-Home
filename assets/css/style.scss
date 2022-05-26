@@ -3637,7 +3637,7 @@
 	height: 60px;
 	width: 60px;
 	position: fixed;
-	bottom: 100px;
+	bottom: 60px;
 	right: 30px;
 	display: none;
 	z-index: 9999;
@@ -3674,7 +3674,7 @@
 		margin: -5px auto 0;
 		position: absolute;
 		right: 0;
-		top: 66%;
+		top: 68%;
 		width: 0;
 		transition: all .5s cubic-bezier(.25,.1,.25,1) 0s;
 	}
@@ -3695,19 +3695,7 @@
 		display: block;
 	}
 }
-.nav-toggle {
-	transition: all .5s cubic-bezier(.25,.1,.25,1) 0s;
-}
-.owl-item {
-	.quote-icon {
-		transition: all .5s cubic-bezier(.25,.1,.25,1) 0s;
-	}
-}
-.price-box {
-	.price-box-head-shadow {
-		transition: all .5s cubic-bezier(.25,.1,.25,1) 0s;
-	}
-}
+
 
 
 

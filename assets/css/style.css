@@ -3342,7 +3342,7 @@ canvas {
   height: 60px;
   width: 60px;
   position: fixed;
-  bottom: 100px;
+  bottom: 60px;
   right: 30px;
   display: none;
   z-index: 9999;
@@ -3388,7 +3388,7 @@ canvas {
   margin: -5px auto 0;
   position: absolute;
   right: 0;
-  top: 66%;
+  top: 68%;
   width: 0;
   -webkit-transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
   transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
@@ -3409,21 +3409,6 @@ canvas {
 
 .scrolling .flame {
   display: block;
-}
-
-.nav-toggle {
-  -webkit-transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
-  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
-}
-
-.owl-item .quote-icon {
-  -webkit-transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
-  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
-}
-
-.price-box .price-box-head-shadow {
-  -webkit-transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
-  transition: all 0.5s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
 }
 
 @media (max-width: 768px) {
